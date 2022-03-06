@@ -1,0 +1,66 @@
+@import "selector";
+
+.backed{
+    width: 100%;
+    margin-top: 110px;
+    padding-top: 32px;
+    padding-bottom: 42px;
+    &_title{
+        @include font($black, bold, 36px, 44px);
+        margin-bottom: 15px;
+    }
+    &_subtitle{
+        @include font(#5E5C6C, 400, 18px, 14px);
+        margin-bottom: 45px;
+    }
+    &_wrapper{
+        display: grid;
+        grid-template-columns: 255px 255px 255px 255px;
+        grid-column-gap: 20px;
+        grid-row-gap: 30px;
+        &_list{
+            padding: 20px;
+            background: #FFFFFF;
+            box-shadow: 0px 4px 144px rgba(0, 0, 0, 0.04);
+            border-radius: 4px;
+            transition: 0.3s all;
+            &-title{
+                margin-top: 15px;
+                @include font($black, bold, 20px, 16px);
+                margin-bottom: 12px;
+            }
+            &-in{
+                display: flex;
+                width: 40px;
+                gap: 13px;
+                height: 17px;
+                align-items: center;
+                &-text{
+                    cursor: pointer;
+                    @include font($black, bold, 14px, 16px);
+                    text-decoration: none;
+                    transition: 0.3s all;
+                }
+                &:hover{
+                    .backed_wrapper_list-in-text{
+                        color: #2962EF;
+                    }
+                    svg{
+                        path{
+                            transition: 0.3s all;
+                            fill: #2962EF;
+                        }
+                    }
+                }
+            }
+            img{
+                border-radius: 4px;
+                width: 215px;
+            }
+            &:hover{
+                background: #FAFBFD;
+                box-shadow: none;
+            }
+        }
+    }
+}

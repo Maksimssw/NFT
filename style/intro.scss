@@ -1,0 +1,92 @@
+@import "selector";
+
+.intro{
+    position: relative;
+    width: 100%;
+    box-sizing: border-box;
+    padding-top: 150px;
+    &_payment{
+        width: 550px;
+        &_title{
+            @include font($black, bold, 48px, 62px);
+            margin-bottom: 15px;
+        }
+        &_subtitle{
+            @include font($grey, normal, 14px, 24px);
+            margin-bottom: 75px;
+        }
+        &_buttons{
+            @include wh (100%, 40px);
+            display: flex;
+            gap: 19px;
+            &_open{
+                @include wh(144px, 40px);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 10px;
+                background: #2962EF;
+                border-radius: 4px;
+                @include font(#fff, normal, 14px, 14px);
+                transition: 0.3s all;
+                text-decoration: none;
+                &:hover{
+                    background: #fff;
+                    color: #2962EF;
+                    transform: translateY(5px);
+                    svg{
+                        path{
+                            fill: #2962EF;
+                        }
+                    }
+                }
+            }
+            &_watch{
+                @include wh(144px, 40px);
+                @include font(#2962EF, 500, 14px, 14px);
+                background: #fff;
+                text-decoration: none;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 4px;
+                transition: 0.3s all;
+                &:hover{
+                    background: #2962EF;
+                    color: #fff;
+                    transform: translateY(5px);
+                }
+            }
+        }
+    }
+    &_bg{
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: -1;
+        img{
+            width: 863px;
+            height: 696px;
+        }
+    }
+    &_info{
+        margin-top: 148px;
+        &_subtitle{
+            @include font($grey, normal, 19px, 24px);
+            margin-bottom: 25px;
+        }
+        &_link{
+            width: 500px;
+            display: flex;
+            justify-content: space-between;
+            &-list{
+                &-num{
+                    @include font($black, bold, 36px, 36px);
+                }
+                &-text{
+                    @include font(#5E5C6C, 500, 18px, 14px);
+                }
+            }
+        }
+    }
+}

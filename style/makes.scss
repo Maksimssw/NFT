@@ -1,0 +1,57 @@
+@import 'selector';
+
+.makes{
+    width: 100%;
+    margin-top: 200px;
+    &_wrapper{
+        display: grid;
+        grid-template-columns: 31% 31% 31%;
+        grid-column-gap: 20px;
+        grid-row-gap: 50px;
+        &_text{
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            &-link{
+                h2{
+                    @include font($black, bold, 36px, 44px);
+                    margin-bottom: 15px;
+                }
+                p{
+                    @include font($grey, 400, 18px, 24px);
+                }
+            }
+        }
+        &-list{
+            border-radius: 8px;
+            padding: 0px 40px;
+            border: 1px solid #EFEFF4;
+            &-ellips{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                @include wh(77px, 77px);
+                box-sizing: border-box;
+                border-radius: 50%;
+                background: #FAFBFD;
+                margin-top: 60px;
+                margin-bottom: 40px;
+            }
+            h3{
+                @include font($black, 800, 18px, 18px);
+                margin-bottom: 16px;
+            }
+            p{
+                @include font($grey, 400, 14px, 24px);
+            }
+            &:hover{
+                background-color: #FAFBFD;
+                border: 1px solid #FAFBFD;
+                .makes_wrapper-list-ellips{
+                    background: #FFFFFF;
+                    box-shadow: 0px 6px 15px rgba(35, 36, 39, 0.05);
+                }
+            }
+        }
+    }
+}

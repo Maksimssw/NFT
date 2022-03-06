@@ -1,0 +1,117 @@
+@import 'selector';
+
+.header{
+    height: 72px;
+
+    &_logo{
+        @include wh (100%, 72px);
+        display: flex;
+        align-items: center;
+        &-text{
+            @include font(#000, 800, 18px, 18px);
+            z-index: 1;
+        }
+        &_link{
+            display: flex;
+            gap: 50px;
+            margin-left: auto;
+            &-list{
+                display: flex;
+                align-items: center;
+                gap: 8px;
+                transition: 0.3s all;
+                a{
+                    @include font($blackGrey, 600, 14px, 14px);
+                    text-decoration: none;
+                    gap: 8px;
+                    transition: 0.3s all;
+                }
+                &:last-child{
+                    a{
+                        @include font(#fff, normal, 14px, 14px);
+                        @include wh(110px, 40px);
+                        background: #2962EF;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        border-radius: 4px;
+                        transition: 0.3s all;
+                        &:hover{
+                            background: #2557d4;
+                            transform: translateY(5px);
+                        }
+                    }
+                }
+                &:hover{
+                    transform: translateY(5px);
+                    &:last-child{
+                        a{
+                            color: #fff;
+                        }
+                    }
+                    a{
+                        color: #2962EF; 
+                    }
+                    path{
+                        fill: #2962EF;
+                    }
+                }
+            }
+        }
+        .nav{
+            z-index: 1;
+            cursor: pointer;
+            @include wh(30px, 30px);
+            position: relative;
+            display: none;
+            &_bar{
+                width: 30px;
+                height: 3px;
+                margin: 6px auto;
+                background-color: orange;
+                list-style-type: none;
+                transition: 0.3s all;
+            }
+        }
+    }
+    .popup{
+        position: absolute;
+        width: 100%;
+        left: -100%;
+        top: 0;
+        transition: 0.3s all;
+        background-color: #000;
+        &_wrapper{
+            margin-top: 72px;
+            display: grid;
+            grid-template-columns: 150px;
+            justify-content: center;
+            flex-wrap: wrap;
+            padding: 0px 20px;
+            height: 300px;
+            a{
+                @include font(#fff, 600, 20px, 14px);
+                transition: 0.3s all;
+                height: 30px;
+                text-align: center;
+                text-decoration: none;
+                &:hover{
+                    color: #2557d4;
+                    transform: translateY(5px);
+                }
+            }
+        }
+    }
+}
+
+.nav.active .nav_bar:nth-child(1){
+   display: none;
+}
+
+.nav.active .nav_bar:nth-child(2){
+    transform: translateY(0px) rotate(45deg);
+ }
+
+ .nav.active .nav_bar:nth-child(3){
+    transform: translateY(-9px) rotate(-45deg);
+ }

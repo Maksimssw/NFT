@@ -1,0 +1,243 @@
+@import 'selector';
+
+@media screen and(max-width: 1230px) {
+    .intro_bg img {
+        width: 648px;
+        height: 522px;
+    }
+    .intro_bg{
+        top: 50px;
+    }
+    .intro{
+        padding-top: 50px;
+    }
+}
+
+
+@media screen and(max-width: 1120px) {
+    .container{
+        width: 1000px;
+    }
+    .backed_wrapper_list img{
+        width: 100%;
+    }
+    .backed_wrapper{
+        grid-template-columns: 24% 24% 24% 24%;
+    }
+}
+
+
+@media screen and(max-width: 991px) {
+    .container{
+        width: 720px;
+    }
+    .backed_wrapper{
+        grid-template-columns: 32% 32% 32%;
+    }
+    .makes{
+        margin-top: 100px;
+    }
+    .intro_payment_title{
+        font-size: 36px;
+    }
+    .intro_info_subtitle{
+        font-size: 14px;
+    }
+    .intro_info_link-list-num{
+        font-size: 30px;
+    }
+    .intro_bg img {
+        width: 486px;
+        height: 392px;
+    }
+    .intro_bg{
+        top: 130px;
+    }
+    .intro{
+        padding-top: 30px;
+    }
+    .makes_wrapper_text-link h2{
+        font-size: 30px;
+    }
+    .makes_wrapper_text-link p{
+        font-size: 14px;
+    }
+    .companies_title{
+        font-size: 22px;
+    }
+    .backed_title{
+        font-size: 30px;
+    }
+    .backed_subtitle{
+        font-size: 14px;
+    }
+    .backed{
+        margin-top: 0;
+    }
+    .backed .container{
+        padding: 0;
+    }
+    .footer_wrapper_info {
+        width: 250px;
+    }
+}
+
+
+
+@media screen and(max-width: 767px) {
+    .container{
+        width: 425px;
+    }
+    .backed_wrapper_list{
+        padding: 5px;
+    }
+    .backed_wrapper{
+        grid-template-columns: 48% 48%;
+    }
+    .intro_payment_title{
+        font-size: 30px;
+    }
+    .intro_payment_subtitle {
+        margin-bottom: 30px;
+    }
+    .intro_info{
+        margin-top: 250px;
+    }
+    .intro_bg img {
+        width: 389px;
+        height: 314px;
+    }
+    .intro_bg{
+        top: 200px;
+    }
+    .header_logo .nav{
+        display: block;
+        margin-left: auto;
+    }
+    .header_logo_link{
+        display: none;
+    }
+    .intro_payment {
+        width: 320px;
+    }
+    .intro_info_link {
+        width: 350px;
+    }
+    .intro_info_link-list-num{
+        font-size: 24px;
+    }
+    .makes_wrapper{
+        grid-template-columns: 49% 49%;
+    }
+    .makes_wrapper-list{
+        padding: 0px 10px;
+    }
+    .makes_wrapper-list-ellips{
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+    .makes{
+        margin-top: 50px;
+    }
+    .makes_wrapper_text-link h2{
+        font-size: 25px;
+    }
+    .backed_wrapper_list-title{
+        margin-top: 6px;
+        margin-bottom: 6px;
+        font-size: 18px;
+    }
+    .backed_subtitle{
+        margin-bottom: 25px;
+    }
+    .footer_wrapper{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .footer_wrapper_subscribe{
+        grid-row: 1;
+    }
+    .footer_wrapper_info{
+        grid-row: 2;
+    }
+    .footer_wrapper_info-subtitle{
+        margin-bottom: 25px;
+    }
+    .footer_wrapper_subscribe_link{
+        margin-bottom: 25px;
+    }
+    .footer{
+        margin-top: 50px;
+    }
+}
+
+@media screen and(max-width: 550px) {
+    .container{
+        width: 320px;
+    }
+    .intro_bg img {
+        width: 312px;
+        height: 252px;
+    }
+    .intro_bg{
+        top: 250px;
+    }
+    .intro_info_link{
+        width: 100%;
+    }
+    .intro_payment_title{
+        font-size: 24px;
+    }
+    .intro_payment{
+        width: 280px;
+    }
+    .intro_info_link-list-num{
+        font-size: 20px;
+    }
+    .intro_info_link-list-text{
+        font-size: 14px;
+    }
+    .header .popup_wrapper a{
+        font-size: 14px;
+    }
+    .makes_wrapper{
+        grid-template-columns: 100%;
+        grid-row-gap: 20px;
+    }
+    .companies{
+        padding: 20px 0px;
+    }
+    .companies_wrapper_up{
+        margin-bottom: 15px;
+    }
+    .companies_title {
+        margin-bottom: 20px;
+    }
+    .companies_title{
+        font-size: 18px;
+    }
+    .backed_wrapper_list-title{
+        font-size: 12px;
+    }
+    .backed_title{
+        margin-bottom: 5px;
+        font-size: 24px;
+    }
+    .backed_wrapper{
+        grid-column-gap: 10px;
+        grid-row-gap: 15px;
+    }
+    .footer .container{
+        padding: 0;
+    }
+    .footer_wrapper_subscribe {
+        width: 280px;
+    }
+    .footer{
+        margin-top: 30px;
+    }
+    .footer_wrapper_subscribe_link{
+        width: 250px;
+    }
+}
+

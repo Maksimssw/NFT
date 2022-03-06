@@ -1,0 +1,41 @@
+@import 'header';
+@import  "intro";
+@import "selector";
+@import "makes";
+@import "compains";
+@import "backed";
+@import "footer";
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family:'Metropolis', sans-serif;
+}
+
+.container{
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 0px 20px;
+}
+
+button{
+    outline: none;
+    background: #2962EF;
+    border: 0;
+    border-radius: 4px;
+}
+
+img{
+    display: block;
+}
+
+input{
+    border: 0;
+    outline: none;
+}
+
+@import "media";

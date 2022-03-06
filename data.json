@@ -1,0 +1,63 @@
+{
+    "makes":[
+        {
+            "img": "img/Makes/Step1.svg",
+            "title": "Step 1",
+            "subtitle": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+        },
+        {
+            "img": "img/Makes/Step2.svg",
+            "title": "Step 2",
+            "subtitle": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+        },
+        {
+            "img": "img/Makes/Step3.svg",
+            "title": "Step 3",
+            "subtitle": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+        },
+        {
+            "img": "img/Makes/Step4.svg",
+            "title": "Step 4",
+            "subtitle": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+        },
+        {
+            "img": "img/Makes/Step5.svg",
+            "title": "Step 5",
+            "subtitle": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+        }
+    ],
+    "backed":[
+        {
+            "img": "img/Backed/backed1.jpg",
+            "title": "Dragonfly Capital"
+        },
+        {
+            "img": "img/Backed/backed2.jpg",
+            "title": "Leighton Cusack"
+        },
+        {
+            "img": "img/Backed/backed3.jpg",
+            "title": "Linda Xie"
+        },
+        {
+            "img": "img/Backed/backed4.jpg",
+            "title": "Sandeep Nailwal"
+        },
+        {
+            "img": "img/Backed/backed5.jpg",
+            "title": "Cooper Turley"
+        },
+        {
+            "img": "img/Backed/backed6.jpg",
+            "title": "Consensys"
+        },
+        {
+            "img": "img/Backed/backed7.jpg",
+            "title": "Leighton Cusack"
+        },
+        {
+            "img": "img/Backed/backed8.jpg",
+            "title": "Mike Dudas"
+        }
+    ]
+}

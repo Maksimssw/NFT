@@ -1,0 +1,15 @@
+@mixin wh($width, $height) {
+    width: $width;
+    height: $height;
+}
+
+@mixin font($color, $fontWeight, $fontSize, $line) {
+    color: $color;
+    font-weight: $fontWeight;
+    font-size: $fontSize;
+    line-height: $line;
+}
+
+$black: #232427;
+$grey: #9998A4;
+$blackGrey: #5E5C6C;
